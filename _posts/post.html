@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article class="post">
+  <nav class="post-breadcrumb">
+    <a href="/">Home</a> / 
+    <span class="category-tag">{{ page.category }}</span>
+  </nav>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">Published on {{ page.date | date: "%b %d, %Y" }}</p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
