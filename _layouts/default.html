@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
     <header>
@@ -10,13 +10,28 @@
         <hr>
     </header>
 
-    <main>
-        {{ content }}
-    </main>
+    <div class="wrapper">
+        <main class="content">
+            {{ content }}
+        </main>
+
+        <aside class="sidebar">
+            <section>
+                <h3>Tags</h3>
+                <ul class="tag-list">
+                  {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+                  {% assign sorted_tags = site_tags | split: ',' | sort %}
+                  {% for tag in sorted_tags %}
+                    <li><a href="/tags#{{ tag | slugify }}">#{{ tag }}</a></li>
+                  {% endfor %}
+                </ul>
+            </section>
+        </aside>
+    </div>
 
     <footer>
         <hr>
-        <p>© {{ site.time | date: '%Y' }} — Built with GitHub Pages</p>
+        <p>© {{ site.time | date: '%Y' }}</p>
     </footer>
 </body>
 </html>
