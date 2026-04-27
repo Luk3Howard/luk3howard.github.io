@@ -32,3 +32,34 @@ a:hover {
   color: #666; /* Gray for dates */
   font-size: 0.9rem;
 }
+
+/* Category Layout Styles */
+.category-group {
+  margin-bottom: 3rem; /* Space between categories */
+}
+
+.category-group h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.post-date {
+  color: #888;
+  font-family: monospace; /* Gives it that clean, data-heavy look */
+  min-width: 60px;
+}
