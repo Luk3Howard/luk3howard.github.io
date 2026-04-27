@@ -15,11 +15,11 @@ body {
   padding: 2rem;
 }
 
-h1, h2, h3 {
-  font-weight: 700;
+h1, h2, h3, h4 {
+  font-family: inherit; /* This forces them to use the system font above */
+  font-weight: 700;    /* Makes them bold and 'NHS-style' */
   color: #000;
-  border-bottom: 2px solid #eee; /* Light gray divider */
-  padding-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 a {
@@ -92,4 +92,9 @@ a:hover {
 .post-content {
   margin-top: 2rem;
   font-size: 1.1rem;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
 }
