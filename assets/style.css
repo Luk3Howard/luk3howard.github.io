@@ -149,3 +149,26 @@ a:hover {
     flex-direction: column;
   }
 }
+
+/* Tags Page Styling */
+.tag-section {
+  margin-bottom: 4rem;
+}
+
+.tag-section h2 {
+  font-size: 1.5rem;
+  background: #f9f9f9; /* Very light gray to distinguish sections */
+  padding: 5px 10px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+
+/* Smooth Scrolling (optional but nice) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevents the header from being cut off when jumping to a tag */
+.tag-section:target {
+  padding-top: 20px;
+}
