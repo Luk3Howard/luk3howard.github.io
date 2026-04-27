@@ -63,3 +63,27 @@ a:hover {
   font-family: monospace; /* Gives it that clean, data-heavy look */
   min-width: 60px;
 }
+
+/* Post Page Styles */
+.post-breadcrumb {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: #888;
+}
+
+.category-tag {
+  color: #111;
+  font-weight: bold;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  border-bottom: none; /* Removing the line here for a cleaner header */
+  margin-bottom: 0.5rem;
+}
+
+.post-content {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
