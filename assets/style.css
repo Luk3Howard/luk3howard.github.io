@@ -98,3 +98,54 @@ a:hover {
   background: #000;
   color: #fff;
 }
+
+/* Layout Wrapper */
+.wrapper {
+  display: flex;
+  gap: 60px; /* Space between content and sidebar */
+  margin-top: 2rem;
+}
+
+.content {
+  flex: 3; /* Content takes up more space */
+}
+
+.sidebar {
+  flex: 1; /* Sidebar is narrower */
+  font-size: 0.9rem;
+}
+
+/* Sidebar Styling */
+.sidebar h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list li {
+  margin-bottom: 0.5rem;
+}
+
+.tag-list a {
+  color: #666;
+  text-decoration: none;
+}
+
+.tag-list a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Responsive: Stack columns on mobile */
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
