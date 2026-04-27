@@ -1,2 +1,5 @@
-title: Short Notes
-theme: minima
+title: Luke Howard
+remote_theme: jekyll/minima
+# Ensure there is NO baseurl line, or if there is, it's empty:
+baseurl: "" 
+url: "https://luk3howard.github.io"
